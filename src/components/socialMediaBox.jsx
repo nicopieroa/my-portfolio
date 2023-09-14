@@ -1,8 +1,8 @@
-import email from '../assets/icons/email/email-whiteColor.svg'
-import instagram from '../assets/icons/instagram/instagram-whiteColor.svg'
-import linkedin from '../assets/icons/linkedin/linkedin-whiteColor.svg'
-import x from '../assets/icons/x/logo.svg'
-import whattsapp from '../assets/icons/whattsapp/whattsapp-whiteColor.svg'
+import email from '../assets/icons/socialMedia/email/email-whiteColor.svg'
+import instagram from '../assets/icons/socialMedia/instagram/instagram-whiteColor.svg'
+import linkedin from '../assets/icons/socialMedia/linkedin/linkedin-whiteColor.svg'
+import whattsapp from '../assets/icons/socialMedia/whattsapp/whattsapp-whiteColor.svg'
+import x from '../assets/icons/socialMedia/x/logo.svg'
 
 export function SocialMediaBox() {
     return (

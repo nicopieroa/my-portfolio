@@ -5,19 +5,19 @@ import { Logo } from './logo';
 export function Navbar({ isNavbarVisible, opened, toggle, label }) {
 
     return (
-        <nav className={`w-full flex justify-between items-center px-twoDotFivePercent py-4 sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent fixed top-0 left-0 bg-neutral-900 shadow-[0_12px_20px_rgba(0,0,0,0.1)] transition-opacity duration-300 z-10 
+        <nav className={`w-full flex justify-between items-center px-twoDotFivePercent py-4 sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent fixed top-0 left-0 bg-black shadow-[0_12px_20px_rgba(255,255,255,0.1)] transition-opacity duration-300 z-10 
         ${isNavbarVisible ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
 
             {/* <Link to='/'> */}
-            <Logo width="64px" />
+            <Logo width="80px" />
             {/* </Link> */}
 
-            <div className='hidden md:flex items-center gap-x-8'>
-                <div className='flex items-center gap-x-4 text-white text-lg font-semibold'>
+            <div className='hidden md:flex items-center gap-x-16'>
+                <div className='flex items-center gap-x-8 text-white text-lg font-semibold'>
                     {/* <Link to='/empresa'> */}
-                    <span className='transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                    <a href="#aboutMe" className='transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         About Me
-                    </span>
+                    </a>
                     {/* </Link> */}
                     <span className='transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Portfolio
