@@ -16,6 +16,9 @@ export default {
         fortyFivePercent: "45%",
         fiftyPercent: "50%",
       },
+      width: {
+        18: "70px",
+      },
     },
     screens: {
       sm: "640px",

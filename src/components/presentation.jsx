@@ -8,11 +8,12 @@ import github from '../assets/icons/skills/github.svg'
 import tailwindcss from '../assets/icons/skills/tailwindcss.svg'
 import mantine from '../assets/icons/skills/mantine.svg'
 import emailjs from '../assets/icons/skills/emailjs.png'
+import { SocialMediaBox } from './socialMediaBox'
 
 export function Presentation() {
     return (
         <main className='bg-neutral-900 text-white text-center flex flex-col gap-y-32 px-twoDotFivePercent py-64 sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
-            <div className='bg-gradient-to-r from-orange-500 to-red-500 flex justify-center items-center rounded-lg'>
+            <div className='bg-gradient-to-br from-red-600 via-orange-500 to-yellow-500 flex justify-center items-center rounded-lg'>
                 <img src={me} alt="An image of my face maded with AI" className='w-full sm:w-11/12 md:w-9/12 lg:w-8/12 xxl:w-6/12' />
             </div>
             {/*  */}
@@ -27,8 +28,16 @@ export function Presentation() {
                 </h1>
             </div>
 
+            <div className='hidden md:flex flex-col gap-y-8 bg-[#202020] py-16 px-2 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
+                <h2 className='text-3xl font-semibold sm:text-4xl'>
+                    Let's talk
+                </h2>
+
+                <SocialMediaBox />
+            </div>
+
             <div id="aboutMe" className='flex flex-col gap-y-8 bg-[#202020] py-16 px-2 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
-                <h2 className='text-3xl font-semibold'>
+                <h2 className='text-3xl font-semibold sm:text-4xl'>
                     About Me
                 </h2>
 
@@ -40,82 +49,87 @@ export function Presentation() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-y-8 bg-[#202020] py-16 px-2 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
-                <h2 className='text-3xl font-semibold'>
-                    Skills
-                </h2>
+            <div className='relative rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
+                <div className="absolute z-10 bg-[#202020] inset-0 rounded-lg"></div>
+                <div className="absolute z-20 z-4 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600 opacity-60 inset-0 rounded-lg"></div>
 
-                <div className="flex flex-wrap items-center justify-center gap-8 bg-transparent border border-whtie py-16 px-2 rounded-lg">
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={html} alt="Logo de html" className='w-20' />
+                <div className='relative z-40 flex flex-col gap-y-8  py-16 px-2 rounded-lg'>
+                    <h2 className='text-3xl font-semibold sm:text-4xl'>
+                        Skills
+                    </h2>
 
-                        <h3 className='font-medium'>
-                            HTML
-                        </h3>
-                    </div>
+                    <div className="flex flex-wrap items-center justify-center gap-8 bg-transparent py-16 px-2 rounded-lg">
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={html} alt="Logo de html" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={css} alt="Logo de css" className='w-20' />
+                            <h3 className='font-medium'>
+                                HTML
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            CSS
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={css} alt="Logo de css" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={javaScript} alt="Logo de javaScript" className='w-20' />
+                            <h3 className='font-medium'>
+                                CSS
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            JavaScript
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={javaScript} alt="Logo de javaScript" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={react} alt="Logo de react.js" className='w-20' />
+                            <h3 className='font-medium'>
+                                JavaScript
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            React JS
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={react} alt="Logo de react.js" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={git} alt="Logo de git" className='w-20' />
+                            <h3 className='font-medium'>
+                                React JS
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            Git
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={git} alt="Logo de git" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={github} alt="Logo de github" className='w-20' />
+                            <h3 className='font-medium'>
+                                Git
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            GitHub
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={github} alt="Logo de github" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={tailwindcss} alt="Logo de tailwind" className='w-20' />
+                            <h3 className='font-medium'>
+                                GitHub
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            Tailwind CSS
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={tailwindcss} alt="Logo de tailwind" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={mantine} alt="Logo de mantine" className='w-20' />
+                            <h3 className='font-medium'>
+                                Tailwind CSS
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            Mantine
-                        </h3>
-                    </div>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={mantine} alt="Logo de mantine" className='w-20' />
 
-                    <div className='flex flex-col items-center justify-center gap-y-4'>
-                        <img src={emailjs} alt="Logo de emailjs" className='w-20' />
+                            <h3 className='font-medium'>
+                                Mantine
+                            </h3>
+                        </div>
 
-                        <h3 className='font-medium'>
-                            Email JS
-                        </h3>
+                        <div className='flex flex-col items-center justify-center gap-y-4'>
+                            <img src={emailjs} alt="Logo de emailjs" className='w-20' />
+
+                            <h3 className='font-medium'>
+                                Email JS
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>

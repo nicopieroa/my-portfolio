@@ -38,9 +38,9 @@ export function Header() {
                     ) : null}
 
                     {/* <Link to='/empresa'> */}
-                    <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                    <a href="#aboutMe" className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         About Me
-                    </span>
+                    </a>
                     {/* </Link> */}
                     <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Portfolio
