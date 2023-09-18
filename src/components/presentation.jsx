@@ -1,19 +1,15 @@
-import me from '../assets/images/me.png'
 import { SocialMediaBox } from './socialMediaBox'
 
 export function Presentation() {
     return (
-        <div className='text-white text-center flex flex-col gap-y-32'>
-            <div className='bg-gradient-to-br from-red-600 via-orange-500 to-yellow-500 flex justify-center items-center rounded-lg'>
-                <img src={me} alt="An image of my face maded with AI" className='w-full sm:w-11/12 md:w-9/12 lg:w-8/12 xxl:w-6/12' />
-            </div>
+        <div className='text-white text-center flex flex-col gap-y-32 px-twoDotFivePercent py-8 lg:p-32 '>
 
-            <div className='flex flex-col gap-y-16 font-bold italic' style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
-                <h1 className='text-4xl sm:text-5xl'>
+            <div className='flex flex-col gap-y-16 font-bold leading-normal italic text-5xl lg:text-6xl' style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
+                <h1>
                     Hi, I am Nicolás Pieroni Aranda!
                 </h1>
 
-                <h1 className='text-4xl sm:text-5xl'>
+                <h1>
                     I am a Web Developer
                 </h1>
             </div>

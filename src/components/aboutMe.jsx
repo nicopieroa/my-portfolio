@@ -1,6 +1,6 @@
 export function AboutMe() {
     return (
-        <div id="aboutMe" className='flex flex-col gap-y-8 bg-[#202020] text-white text-center py-16 px-8 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
+        <div id="aboutMe" className='flex flex-col gap-y-8 bg-[#202020] text-white text-center px-twoDotFivePercent py-8 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)] lg:p-32'>
             <h2 className='text-3xl font-semibold sm:text-4xl'>
                 About Me
             </h2>
