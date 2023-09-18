@@ -42,9 +42,9 @@ export function Header() {
                         About Me
                     </a>
                     {/* </Link> */}
-                    <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
-                        Portfolio
-                    </span>
+                    <a href='#projects' className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                        Projects
+                    </a>
                     <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Services
                     </span>

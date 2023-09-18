@@ -16,9 +16,9 @@ export function Navbar({ isNavbarVisible, opened, toggle, label }) {
                         About Me
                     </a>
 
-                    <span className='transition-all duration-150 hover:underline hover:decoration-white cursor-pointer'>
-                        Portfolio
-                    </span>
+                    <a href="#projects" className='transition-all duration-150 hover:underline hover:decoration-white cursor-pointer'>
+                        Projects
+                    </a>
                     <span className='transition-all duration-150 hover:underline hover:decoration-white cursor-pointer'>
                         Services
                     </span>
