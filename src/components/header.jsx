@@ -45,12 +45,12 @@ export function Header() {
                     <a href='#projects' className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Projects
                     </a>
-                    <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                    {/* <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Services
                     </span>
                     <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
                         Experience
-                    </span>
+                    </span> */}
 
                     <SocialMediaBox />
                 </aside>

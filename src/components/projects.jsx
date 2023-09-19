@@ -26,18 +26,20 @@ export function ProjectCard() {
 
 export function Projects() {
     return (
-        <div id="projects" className="text-white text-center flex flex-col gap-y-16 px-twoDotFivePercent py-8 rounded-lg bg-[#202020] shadow-[0_0_20px_rgba(255,255,255,0.2)] lg:p-32">
+        <div className='px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
+            <div id="projects" className="text-white text-center flex flex-col gap-y-16 p-8 md:p-16 lg:p-32 rounded-lg bg-[#202020] shadow-[0_0_20px_rgba(255,255,255,0.2)]">
 
-            <h2 className='text-3xl font-semibold sm:text-4xl'>
-                Projects
-            </h2>
+                <h2 className='text-4xl font-semibold lg:text-5xl'>
+                    Projects
+                </h2>
 
-            <div className="flex flex-wrap items-center justify-center gap-32 p-16">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                <div className="flex flex-wrap items-center justify-center gap-32">
+                    <ProjectCard />
+                    <ProjectCard />
+                    <ProjectCard />
+                    <ProjectCard />
+                    <ProjectCard />
+                </div>
             </div>
         </div>
     )
