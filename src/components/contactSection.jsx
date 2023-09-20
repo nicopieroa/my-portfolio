@@ -54,11 +54,11 @@ export function ContactSection() {
                 </h2>
 
                 <form ref={formRef} onSubmit={form.onSubmit(handleSubmit)} className='flex flex-col gap-y-8'>
-                    <TextInput label="Name" placeholder="Laura" {...form.getInputProps('name')} withAsterisk className='m-0 w-full' name='from_name' />
+                    <TextInput label="Name" placeholder="Laura" {...form.getInputProps('name')} withAsterisk className='m-0 w-full' name='userName' />
 
-                    <TextInput label="Email" placeholder="laura@email.com" {...form.getInputProps('email')} withAsterisk className='m-0 w-full' name='from_email' />
+                    <TextInput label="Email" placeholder="laura@email.com" {...form.getInputProps('email')} withAsterisk className='m-0 w-full' name='userEmail' />
 
-                    <Textarea label="Message" placeholder="Hi Nico..." {...form.getInputProps('message')} withAsterisk className='m-0 w-full' name='message' />
+                    <Textarea label="Message" placeholder="Hi Nico..." {...form.getInputProps('message')} withAsterisk className='m-0 w-full' name='userMessage' />
 
                     <Button size="xl" variant='filled' type='submit' className='bg-green-600 hover:bg-green-700 m-0'>
                         ENVIAR
