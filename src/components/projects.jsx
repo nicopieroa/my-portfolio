@@ -13,7 +13,7 @@ export function Projects() {
 
                 <div className="flex flex-wrap items-center justify-center gap-32">
                     {projectData.map((card) => (
-                        <Paper key={card.id} className='w-110 h-75 bg-neutral-900 flex flex-col gap-y-8 justify-center items-center bg-cover bg-center rounded-lg p-8 shadow-[0_0_20px_rgba(249,115,22,0.5)]   grow-animation-card'>
+                        <Paper key={card.id} className='w-110 h-75 bg-neutral-900 flex flex-col gap-y-8 justify-center items-center bg-cover bg-center rounded-xl p-8 shadow-[0_0_20px_rgba(249,115,22,0.5)]   grow-animation-card'>
                             <img src={card.image.url} alt={card.image.alt} className='w-full' />
 
                             <Title order={3} className='font-bold text-white text-3xl'>
