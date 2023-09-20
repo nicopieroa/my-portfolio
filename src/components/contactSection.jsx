@@ -50,7 +50,7 @@ export function ContactSection() {
         <div className='px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
             <section id="contactSection" className='flex flex-col gap-y-16 p-8 md:p-16 lg:p-32 bg-[#202020] px-twoDotFivePercent text-white text-center rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
                 <h2 className="text-4xl font-semibold lg:text-5xl">
-                    Contactanos
+                    Contact Me
                 </h2>
 
                 <form ref={formRef} onSubmit={form.onSubmit(handleSubmit)} className='flex flex-col gap-y-8'>
