@@ -7,7 +7,7 @@
       "alt": "My Porfolio image project"
     },
     "url": "https://nicopiero.vercel.app/",
-    "repositorie": "https://github.com/nicopieroa/my-portfolio"
+    "repository": "https://github.com/nicopieroa/my-portfolio"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
       "alt": "WM Argentina image project"
     },
     "url": "https://wm-argentina.vercel.app/",
-    "repositorie": "https://github.com/nicopieroa/wm-argentina/tree/main"
+    "repository": "https://github.com/nicopieroa/wm-argentina/tree/main"
   },
   {
     "id": 1,
@@ -27,6 +27,6 @@
       "alt": "Aranda Salud Legal image project"
     },
     "url": "https://aranda-salud-legal.vercel.app/",
-    "repositorie": "https://github.com/nicopieroa/aranda-salud-legal"
+    "repository": "https://github.com/nicopieroa/aranda-salud-legal"
   }
 ]

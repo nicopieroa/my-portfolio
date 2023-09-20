@@ -1,7 +1,19 @@
+import emailjs from '@emailjs/browser';
+
 import { useForm } from '@mantine/form';
 import { Textarea, TextInput, Button } from '@mantine/core';
 
+import { AlertComponent } from './alert';
+import { LoaderComponent } from './loader';
+
+import { useRef, useState } from 'react';
+
 export function ContactSection() {
+    const formRef = useRef()
+
+    const [statusFormSend, setStatusFormSend] = useState(null)
+    const [loader, setLoader] = useState(false)
+
     const form = useForm({
         initialValues: { name: '', email: '', message: '' },
 
@@ -12,8 +24,26 @@ export function ContactSection() {
         },
     });
 
+    const emailServices = () => {
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICERID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATEID;
+        const apikey = import.meta.env.VITE_EMAILJS_APIKEY;
+
+        emailjs.sendForm(serviceId, templateId, formRef.current, apikey)
+            .then((result) => {
+                if (result.text) setStatusFormSend(result.text)
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
     const handleSubmit = () => {
+        emailServices()
+        setLoader(true)
         form.reset()
+
+        if (statusFormSend !== null)
+            setLoader(false)
     }
 
     return (
@@ -23,16 +53,23 @@ export function ContactSection() {
                     Contactanos
                 </h2>
 
-                <form onSubmit={form.onSubmit(handleSubmit)} className='flex flex-col gap-y-8'>
-                    <TextInput label="Name" placeholder="Laura" {...form.getInputProps('name')} withAsterisk className='m-0 w-full' />
+                <form ref={formRef} onSubmit={form.onSubmit(handleSubmit)} className='flex flex-col gap-y-8'>
+                    <TextInput label="Name" placeholder="Laura" {...form.getInputProps('name')} withAsterisk className='m-0 w-full' name='from_name' />
 
-                    <TextInput label="Email" placeholder="laura@email.com" {...form.getInputProps('email')} withAsterisk className='m-0 w-full' />
+                    <TextInput label="Email" placeholder="laura@email.com" {...form.getInputProps('email')} withAsterisk className='m-0 w-full' name='from_email' />
 
-                    <Textarea label="Message" placeholder="Hi Nico..." {...form.getInputProps('message')} withAsterisk className='m-0 w-full' />
+                    <Textarea label="Message" placeholder="Hi Nico..." {...form.getInputProps('message')} withAsterisk className='m-0 w-full' name='message' />
 
                     <Button size="xl" variant='filled' type='submit' className='bg-green-600 hover:bg-green-700 m-0'>
                         ENVIAR
                     </Button>
+
+                    {statusFormSend === null && loader === false ? null :
+                        statusFormSend === null && loader ? <LoaderComponent /> :
+                            statusFormSend !== null ? <AlertComponent statusFormSend={statusFormSend} /> :
+                                null}
+
+
                 </form>
             </section>
         </div>
