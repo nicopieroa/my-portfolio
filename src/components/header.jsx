@@ -32,7 +32,7 @@ export function Header() {
             <Navbar isNavbarVisible={isNavbarVisible} opened={opened} toggle={toggle} label={label} />
 
             <Drawer opened={opened} onClose={toggle} position="right" size="auto" className="md:hidden">
-                <aside className="w-full bg-black h-full grid gap-y-10 place-content-center text-white text-center px-4">
+                <aside className="w-full bg-black h-full flex flex-col gap-y-16 justify-center items-center text-white">
                     {opened ? (
                         <Burger opened={opened} onClick={toggle} aria-label={label} size="44px" color="#ffffff" className="absolute top-5 right-3" />
                     ) : null}

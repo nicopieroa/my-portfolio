@@ -2,7 +2,7 @@ import { SocialMediaBox } from './socialMediaBox'
 
 export function Presentation() {
     return (
-        <div className='text-white text-center flex flex-col gap-y-32 p-8 md:p-16 lg:p-32 px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
+        <div id="presentation" className='text-white text-center flex flex-col gap-y-32 p-8 md:p-16 lg:p-32 px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
 
             <div className='flex flex-col gap-y-16 font-bold leading-normal italic text-5xl lg:text-6xl' style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
                 <h1>

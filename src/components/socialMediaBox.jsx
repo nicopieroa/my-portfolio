@@ -6,7 +6,7 @@ import x from '../assets/icons/socialMedia/x/logo.svg'
 
 export function SocialMediaBox() {
     return (
-        <div className="w-11/12 xl:w-11/12 xxl:w-9/12 p-8 flex items-center justify-center gap-x-16 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 self-center">
+        <div id='socialMediaBox' className="w-3/4 sm:w-2/4 md:w-11/12 xl:w-11/12 xxl:w-8/12 p-4 md:p-8 flex items-center justify-center gap-x-4 md:gap-x-16 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 self-center">
             <a href="https://wa.me/543426153815" target="_blank" rel="noopener noreferrer" className='transition-all duration-200 grow-animation '>
                 <img src={whattsapp} alt="Imagen del logo de whatsapp" className='w-full' />
             </a>

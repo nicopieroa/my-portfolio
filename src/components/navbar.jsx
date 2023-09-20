@@ -26,9 +26,11 @@ export function Navbar({ isNavbarVisible, opened, toggle, label }) {
                     </span> */}
                 </div >
 
-                <Button className='bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-700 hover:to-red-900'>
-                    Contact Me
-                </Button>
+                <a href="#presentation">
+                    <Button className='bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-700 hover:to-red-900'>
+                        Contact Me
+                    </Button>
+                </a>
             </div>
 
             <Burger opened={opened} onClick={toggle} aria-label={label} size="44px" color="white" className='md:hidden' />
