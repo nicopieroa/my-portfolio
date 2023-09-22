@@ -3,6 +3,19 @@ import { Paper, Title, Button } from '@mantine/core';
 import projectData from '../assets/projects-data.json'
 
 export function Projects() {
+
+    // wm project:
+    // {
+    //     "id": 2,
+    //     "name": "WM Argentina",
+    //     "image": {
+    //       "url": "/projects-images/wm-argentina.png",
+    //       "alt": "WM Argentina image project"
+    //     },
+    //     "url": "https://wm-argentina.vercel.app/",
+    //     "repository": "https://github.com/nicopieroa/wm-argentina/tree/main"
+    //   },
+
     return (
         <div className='px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
             <div id="projects" className="text-white text-center flex flex-col gap-y-16 p-8 md:p-16 lg:p-32 rounded-lg bg-[#202020] shadow-[0_0_20px_rgba(255,255,255,0.2)]">

@@ -9,16 +9,7 @@
     "url": "https://nicopiero.vercel.app/",
     "repository": "https://github.com/nicopieroa/my-portfolio"
   },
-  {
-    "id": 2,
-    "name": "WM Argentina",
-    "image": {
-      "url": "/projects-images/wm-argentina.png",
-      "alt": "WM Argentina image project"
-    },
-    "url": "https://wm-argentina.vercel.app/",
-    "repository": "https://github.com/nicopieroa/wm-argentina/tree/main"
-  },
+
   {
     "id": 1,
     "name": "Aranda Salud Legal",
