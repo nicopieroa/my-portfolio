@@ -40,7 +40,7 @@ export function Projects() {
                                     </Button>
                                 </a>
 
-                                <a href={card.repositorie} target='_blank' rel='noreferrer'>
+                                <a href={card.repository} target='_blank' rel='noreferrer'>
                                     <Button className='bg-red-100 rounded-lg text-red-600 border-2 border-red-600 hover:bg-black hover:text-red-600 transition-all duration-150'>
                                         See GitHub Repository
                                     </Button>
