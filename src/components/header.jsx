@@ -3,6 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 
 import { Navbar } from './navbar';
 import { SocialMediaBox } from './socialMediaBox';
+import { DonwloadResumeButton } from './downloadResumeButton';
 
 import { useEffect, useState } from 'react';
 
@@ -53,6 +54,8 @@ export function Header() {
                     </span> */}
 
                     <SocialMediaBox />
+
+                    <DonwloadResumeButton />
                 </aside>
             </Drawer>
         </header >

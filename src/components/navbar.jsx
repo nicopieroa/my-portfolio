@@ -27,7 +27,7 @@ export function Navbar({ isNavbarVisible, opened, toggle, label }) {
                 </div >
 
                 <a href="#presentation">
-                    <Button className='bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-700 hover:to-red-900'>
+                    <Button className='bg-red-600 hover:bg-red-900'>
                         Contact Me
                     </Button>
                 </a>

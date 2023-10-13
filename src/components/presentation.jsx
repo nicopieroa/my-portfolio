@@ -1,4 +1,5 @@
 import { SocialMediaBox } from './socialMediaBox'
+import { DonwloadResumeButton } from './downloadResumeButton'
 
 export function Presentation() {
     return (
@@ -14,12 +15,14 @@ export function Presentation() {
                 </h1>
             </div>
 
-            <div className='hidden md:flex flex-col gap-y-16 bg-[#202020] p-8 md:p-16 lg:p-32 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
+            <div className='hidden md:flex flex-col gap-y-16 bg-[#202020] items-center justify-center p-8 md:p-16 lg:p-32 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)]'>
                 <h2 className='text-4xl font-semibold lg:text-5xl'>
                     Let's talk
                 </h2>
 
                 <SocialMediaBox />
+
+                <DonwloadResumeButton />
             </div>
         </div >
     )

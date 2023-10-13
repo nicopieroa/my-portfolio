@@ -13,7 +13,8 @@ export function Skills() {
         <div className='px-twoDotFivePercent sm:px-fivePercent lg:px-tenPercent xl:px-fifteenPercent'>
             <div className='relative z-0 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.2)] text-white text-center'>
                 <div className="absolute z-10 bg-[#202020] inset-0 rounded-lg"></div>
-                <div className="absolute z-20 z-4 bg-gradient-to-br from-yellow-500 via-orange-500 to-red-600 opacity-60 inset-0 rounded-lg"></div>
+                <div className="absolute z-20 z-4 bg-gradient-to-br from-red-600 from-20% to-red-300 opacity-70 inset-0 rounded-lg">
+                </div>
 
                 <div className='relative z-40 flex flex-col gap-y-16 p-8 md:p-16 lg:p-32 rounded-lg'>
                     <h2 className='text-4xl font-semibold lg:text-5xl'>
