@@ -7,17 +7,29 @@
       "alt": "My Porfolio image project"
     },
     "url": "https://nicopiero.vercel.app/",
-    "repository": "https://github.com/nicopieroa/my-portfolio"
+    "repository": "https://github.com/nicopieroa/my-portfolio",
+    "status": "On Line"
   },
-
+  {
+    "id": 2,
+    "name": "WM Argentina",
+    "image": {
+      "url": "/projects-images/wm-argentina.png",
+      "alt": "WM Argentina home page project"
+    },
+    "url": "https://wm-argentina.vercel.app/",
+    "repository": "https://github.com/nicopieroa/wm-argentina",
+    "status": "Working On"
+  },
   {
     "id": 1,
     "name": "Aranda Salud Legal",
     "image": {
       "url": "/projects-images/aranda-salud-legal.png",
-      "alt": "Aranda Salud Legal image project"
+      "alt": "Aranda Salud Legal home page project"
     },
     "url": "https://aranda-salud-legal.vercel.app/",
-    "repository": "https://github.com/nicopieroa/aranda-salud-legal"
+    "repository": "https://github.com/nicopieroa/aranda-salud-legal",
+    "status": "On Line"
   }
 ]

@@ -46,6 +46,12 @@ export function Projects() {
                                     </Button>
                                 </a>
                             </div>
+
+                            {card.status === 'On Line' ?
+                                <span className='text-green-500 border border-green-500 rounded-3xl py-1 px-4'>{card.status}</span> :
+                                card.status === 'Working On' ?
+                                    <span className='text-yellow-500 border border-yellow-500 rounded-3xl py-1 px-4'>{card.status}</span> :
+                                    null}
                         </Paper>
                     ))}
                 </div>

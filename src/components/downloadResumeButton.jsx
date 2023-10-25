@@ -7,7 +7,7 @@ export function DonwloadResumeButton() {
         <Menu trigger="hover" openDelay={100} closeDelay={200} className="w-auto h-16 bg-red-100 rounded-lg text-red-600 border-2 border-red-600 hover:bg-black hover:text-red-600 transition-all duration-150">
             <Menu.Target>
                 <Button className='flex items-center text-xl hover:bg-transparent'>
-                    <span>Download Resume</span>
+                    <span>Download My Resume</span>
                     <img src={dropdownIcon} alt="Flecha de despliegue de menu" className="w-10 ml-4" />
                 </Button>
             </Menu.Target>
