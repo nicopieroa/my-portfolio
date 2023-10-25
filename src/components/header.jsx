@@ -39,11 +39,11 @@ export function Header() {
                     ) : null}
 
                     {/* <Link to='/empresa'> */}
-                    <a href="#aboutMe" className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                    <a href="#aboutMe" className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer' onClick={toggle}>
                         About Me
                     </a>
                     {/* </Link> */}
-                    <a href='#projects' className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
+                    <a href='#projects' className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer' onClick={toggle}>
                         Projects
                     </a>
                     {/* <span className='text-2xl font-semibold transition-all duration-300 hover:underline hover:decoration-white cursor-pointer'>
